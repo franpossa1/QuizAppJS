@@ -1,0 +1,59 @@
+/*Variables*/
+
+/*Estilos*/
+* {
+  box-sizing: border-box;
+
+  body {
+    background-color: rgb(62, 144, 211);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        display: flex;
+        flex-direction: column;
+      padding: 30px;
+      border: 3px solid green;
+      border-radius: 20px;
+        .pregunta_contenedor {
+            img {
+                border-radius: 10px;
+            }
+            .pregunta_foto {
+                text-align: center;
+            }
+        }
+        .opciones {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            button {
+                color:red;
+                width: 45%;
+                margin: 5px;
+                font-family: 'Raleway', sans-serif;
+
+            
+            }
+
+        }
+
+        .controladores{
+            display: flex;
+    justify-content: space-evenly;
+    button{
+        font-family: 'Raleway', sans-serif;
+    }
+
+        }
+
+
+
+
+    }
+  }
+}

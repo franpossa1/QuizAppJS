@@ -1,0 +1,76 @@
+/*Variables*/
+/*Estilos*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  background-color: #3e90d3;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border: 3px solid green;
+  border-radius: 20px;
+}
+
+* body .container .pregunta_contenedor img {
+  border-radius: 10px;
+}
+
+* body .container .pregunta_contenedor .pregunta_foto {
+  text-align: center;
+}
+
+* body .container .opciones {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+* body .container .opciones button {
+  color: red;
+  width: 45%;
+  margin: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+* body .container .controladores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* body .container .controladores button {
+  font-family: 'Raleway', sans-serif;
+}
