@@ -1,59 +1,108 @@
 /*Variables*/
+@mixin Boton-main {
+  color: black;
+  width: 45%;
+  margin: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
 
 /*Estilos*/
 * {
   box-sizing: border-box;
+  .hide {
+    //display: none;
+  }
 
   body {
     background-color: rgb(62, 144, 211);
     width: 100vw;
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     .container {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
       padding: 30px;
-      border: 3px solid green;
+      background-color: rgb(0, 81, 156);
+      border: 3px solid rgb(0, 65, 126);
       border-radius: 20px;
-        .pregunta_contenedor {
-            img {
-                border-radius: 10px;
-            }
-            .pregunta_foto {
-                text-align: center;
-            }
+      margin: 10em;
+
+      .pregunta_contenedor {
+          
+        img {
+          width: 100%;
+          height: auto;
+         
+          border-radius: 10px;
         }
-        .opciones {
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-            flex-flow: row wrap;
-            button {
-                color:red;
-                width: 45%;
-                margin: 5px;
-                font-family: 'Raleway', sans-serif;
-
-            
-            }
-
+        .pregunta_foto {
+          text-align: center;
+          color: white;
+          font-weight: 700;
         }
+      }
+      .opciones {
+      
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
 
-        .controladores{
-            display: flex;
-    justify-content: space-evenly;
-    button{
-        font-family: 'Raleway', sans-serif;
-    }
-
+        .btn {
+          @include Boton-main();
         }
+        .correcta {
+            background-color: green;
+            color: black;
+            width: 45%;
+            margin: 5px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 5px;
+            border: none; 
+        }
+        .incorrecta {
+          background-color: red;
+          color: white;
+          width: 45%;
+          margin: 5px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 700;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+        }
+      }
 
-
-
-
+      .controladores {
+        display: flex;
+        justify-content: space-evenly;
+        .btn {
+          @include Boton-main();
+          width: 30%;
+          width: 100%;
+         
+        }
+      }
     }
   }
 }
+@media (max-width: 820px) {
+    *{
+        font-size: 1em;
+        body{
+            .container {
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+  }
