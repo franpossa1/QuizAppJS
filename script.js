@@ -25,7 +25,7 @@ function empezarJuego() {
 }
 //Esto va a permitir que al darle siguiente pases al otro item
 function proximaPregunta() {
-    imgPerro.src = "/rocky.jpeg"
+    imgPerro.src = "https://github.com/franpossa1/QuizAppJS/blob/main/rocky.jpeg?raw=true"
 
 }
 //esto permite elegir entre las diferentes respuestas
