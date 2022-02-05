@@ -38,9 +38,19 @@
   border-radius: 20px;
 }
 
+* body .container .pregunta_contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 * body .container .pregunta_contenedor img {
+  max-width: 600px;
   width: 100%;
-  max-width: 400px;
   height: auto;
   border-radius: 10px;
 }

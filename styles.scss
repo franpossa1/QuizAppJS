@@ -19,7 +19,7 @@
 
   body {
     background-color: rgb(62, 144, 211);
-    
+
     font-family: "Raleway", sans-serif;
     display: flex;
     align-items: center;
@@ -32,16 +32,18 @@
       background-color: rgb(0, 81, 156);
       border: 3px solid rgb(0, 65, 126);
       border-radius: 20px;
-      
-      
 
       .pregunta_contenedor {
-          
+        display: flex;
+        flex-direction: column;
+
+    
         img {
+          max-width: 600px;
           width: 100%;
-          max-width: 400px;
+
           height: auto;
-         
+
           border-radius: 10px;
         }
         .pregunta_foto {
@@ -51,30 +53,27 @@
         }
       }
       .opciones {
-      
         padding: 20px;
         display: flex;
         justify-content: space-around;
         flex-flow: row wrap;
-        &.hide{
-                    
+        &.hide {
           display: none;
-        
-      }
+        }
 
         .btn {
           @include Boton-main();
         }
         .correcta {
-            background-color: green;
-            color: black;
-            width: 45%;
-            margin: 5px;
-            font-family: "Raleway", sans-serif;
-            font-weight: 700;
-            padding: 10px;
-            border-radius: 5px;
-            border: none; 
+          background-color: green;
+          color: black;
+          width: 45%;
+          margin: 5px;
+          font-family: "Raleway", sans-serif;
+          font-weight: 700;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
         }
         .incorrecta {
           background-color: red;
@@ -96,29 +95,28 @@
           @include Boton-main();
           width: 30%;
           width: 100%;
-         
         }
       }
     }
   }
 }
 @media (max-width: 500px) {
-    *{
-        font-size: 1em;
-        
-        body{
-            .container {
-                max-width: 70%;
-                margin: auto;
-                .opciones {
-                  flex-direction: column;
-                  align-items: center;
-                  
-                  .btn {
-                    width: 100%;
-                  }
-                }
-            }
+  * {
+    font-size: 1em;
+
+    body {
+      .container {
+        max-width: 70%;
+        margin: auto;
+        .opciones {
+          flex-direction: column;
+          align-items: center;
+
+          .btn {
+            width: 100%;
+          }
         }
+      }
     }
   }
+}
